@@ -129,13 +129,71 @@
       </p>
       <h2 class="mt-5" id="3">Simple Questions</h2>
       <p>
-        Here are some simple proof problems with solutions. Whilst reading through this textbook, each rule taught has a proof, and we recommend you to try and prove each rule to help practice this skill.
+        Here are some simple proof problems with solutions. Whilst reading through this textbook, each rule taught has a proof, and we recommend you to try and prove each rule to help practice this skill. The questions presented are remedial since assuming you have just started the A level course and have not been taught any of the mathematical techniques to prove harder problems.
       </p>
+      <h5>
+      	Warm-up
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#answers1">
+      	Reveal Solutions
+      </button>
+      </h5>
+      <ol>
+      	<li>Prove that an even multiplied by any integer will be even.</li>
+      	<li>Prove that an odd multiplied by an odd number is odd.</li>
+      	<li>Prove that \( n^2 - n \) is always an even number.</li>
+      	<li>Prove the sum of 2 consecutive prime numbers is always even.</li>
+      	<li>Given that a is a positive real number, prove that: \( a + \dfrac{1}{a} \geq 2\)</li>
+      </ol>
+      <!-- Modal -->
+      <div class="modal fade" id="answers1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Warm-up question solutions</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <ol>
+              	<li>
+              		An even integer n is a multiple of 2 so can be written as \(2k\). Let m represent any integer. <br />
+              		\(nm = 2km = 2(km)\).
+              	</li>
+              	<br />
+              	<li>
+              		Let \( 2j + 1 \) represent an odd number, n, and let \(2k + 1\) represent another distinct odd number, m. <br />
+              		\(nm = (2j + 1)(2k + 1) = 4jk + 2j + 2k + 1 = 2(2jk + j + k) + 1\). By substitution of \( 2jk + j + k = z\)  <br />
+              		\(nm = 2z + 1\) which proves the statement.
+              	</li>
+              	<br />
+              	<li>
+              		\( n^2 - n = n \times n - n = n(n - 1) \). Firstly let us prove the statement for odd numbers then even numbers. If n is odd then let \(  n = 2k + 1\): <br />
+              		\(2k+1(2k + 1 - 1) = 2k+1(2k)\). Since anything multiplied by an even number is an even number we can stop here. If n is even then let \(n = 2m \): <br />
+              		\(2m(2m - 1).\) The same logic applied above can be used here. QED.
+              	</li>
+              	<br />
+              	<li>
+              		We can disprove this given that 2 and 3 are both consecutive prime numbers and sum to an odd number; 5.
+              	</li>
+              	<br />
+              	<li>
+              		Again, we can also disprove this statement given that \( a > 0\) and if we let a be 1 it is less than 2.
+              	</li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>      
+
     </main>
 
     <footer class="footer">
       <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+        <span class="text-muted">Last updated 17/11/2018.</span>
       </div>
     </footer>
 
