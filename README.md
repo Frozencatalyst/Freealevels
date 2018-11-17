@@ -1,2 +1,2 @@
 # Frozencatalyst's A level Guides
-http://frozencatalyst101.github.io/Freealevels
+http://frozencatalyst.github.io/freealevels
