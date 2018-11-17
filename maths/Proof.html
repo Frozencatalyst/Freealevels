@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="post.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Katex -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+    <title>A level Maths | Proof</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="../index.html">A level Maths</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">
+                <i class="material-icons">
+                arrow_back
+                </i>
+                Home
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">1. Proof <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                2. Algebra and functions
+                <i class="material-icons">
+                arrow_forward
+                </i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Other Subjects</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="sidebar">
+      <li>
+        <div class="card-header">Table of contents:</div>
+        <ul><a href="#">1. Introduction</a></ul>
+        <ul><a href="#2">2. Methods of Proof</a></ul>
+        <ul><a href="#3">3. Questions</a></ul>
+        <hr />
+        <div class="card-header">Related content:</div>
+      </li>
+    </div>
+
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <div id="#1"></div>
+      <h2 class="mt-5"">Introduction to Mathematics</h2>
+      <p class="lead">Mathematics is in many ways the most rewarding A level to study; it opens a wide-range of career opportunities from investment banking to research in the sciences. However, many people find mathematics hard as it requires you to link many separate rules together and apply them to answer a question, as a result Mathematics requires practice and hard-work. The textbook starts with the assumption that you have passed a GCSE Maths course, although some principles will be briefly reviewed.
+      <br />
+      <h2 class="mt-5">What is Mathematics?</h2>
+      <p class="lead">
+        Mathematics is simply a set of rules which make up a game. The most basic rules are taught from primary school and gradually built upon so that you can solve more problems and interact with mathematics in a more creative, abstract way. Like any game some are naturally better at certain aspects than others. Regardless of this Mathematics is useful for any individual as once you have learnt enough rules you can <b>apply</b> them to the real world to solve real-life situations. However, another side of Mathematics lies in expanding upon the rules of the game by using multiple established rules in creative, explorative ways to find and establish new rules which enrich the toolkit Mathematicians already have - Welcome to <b>Pure</b> Mathematics.
+      </p>
+      <h2 class="mt-5" id="2">How do Mathematicians find rules?</h2>
+      <p class="lead">
+        The job of a pure mathematician lies in discovery; discovering new rules of patterns that lie in wait for the most intelligent of beings to seize them as a result of the basic assumptions/definitions, more formally known as axioms, that define the game of mathematics. Let our journey begin by addressing some basic definitions:
+      </p>
+      <ul>
+        <li>There exists a set (collection of individual objects) of positive integer numbers known as Rational Numbers: \( \N = \{ 1,2,3,4,... \} \) </li>
+        <li>There exists a set of integer numbers including all natural numbers, \( \N \), 0 and negative integers:  \( \Z = \{ ...,-1,0,1,...  \} \)</li>
+        <li> Letters can be used as variables; to represent different types of numbers or a specific number (Basic algebra)</li>
+        <li>There is a set of numbers known as Rational numbers which can be expressed exactly as a ratio (fraction) of two integers: $$  \text{Q} = \{\frac{p}{q} \text{where p and q are integers and } q \neq 0 \} $$</li>
+        <li>There exist the following basic operations (and their inverse operations): Addition, Subtraction, Multiplication, Division</li>
+        <li>An even number is defined as a multiple of 2 \( 2n \) and An odd number is defined as not an even number: \( 2n - 1, 2n + 1\)</li>
+      </ul>
+      <h2 class="mt-5">Methods of Proof</h2>
+      <p class="lead">
+        Now we can go about proving, or disproving, new rules given the above assumptions. The methods we will learn and need to apply to basic problems are firstly <b>proof by deduction</b>. This is when we use pre established rules to find the new rule we want to find. As an example, we can prove that an even number added to a different even number is even. let \(2n\) represent an even number and \(2m \) represent another even number:
+
+        $$
+        2n + 2m = 2(n + m)
+        $$
+        Since we can factor out 2 this shows that number \( n + m \) is even. Another method of proof, or more accurately disproof, is by <b>counter-example</b>: Find one example that contradicts the new rule. For example we can disprove that for 2 integers, \( a,b \), if \(a^2 = b^2 \) then \(a = b\):
+
+        If \(a = 3, b = 3 \) then the statement holds. However if \(a = 3, b = -3 \):
+        $$
+        3^2 = (-3)^2, 3 \neq -3
+        $$
+        Then the statement does not hold, therefore we have proved the statement to be false. QED. Another method of disproof is by assuming the statement to be true and then finding a contradiction in previously accepted rules of mathematics as a result of the assumption, which proves that the assumption made must be false. A famous <b> proof by contradiction </b> is the proof that \( \sqrt{2} \) is irrational:
+
+        <ol>
+          <li>Assume that  \( \sqrt{2} \) is a rational number and therefore can be expressed as \( \frac{a}{b}, b \neq 0 \) where \( a, b\) are integers in their simplest terms (they do not both have a common divisor). </li>
+          <li>
+            \((\sqrt{2})^2 =(\dfrac{a}{b})^2\ \\ 2 = \dfrac{a^2}{b^2} \\ 2a^2 = b^2\)
+          </li>
+          <li>
+            We have found that \( b \) must be even as \( b^2 \) is even and the square of an even number is an even number. 
+          </li>
+          <li>
+            We can apply the same argument to \( a \) which must also be even as a result. We can rewrite b and a as \(2m, 2n \) (multiples of 2).
+          </li>
+          <li>
+            Therefore \( \sqrt{2} = \dfrac{2m}{2n}\) which contradicts the fact that \(a, b\) are in their simplest terms. Therefore by contradiction, the \( \sqrt{2} \) must be irrational. QED.
+          </li>
+        </ol>
+      </p>
+      <p class="lead">
+        The final method of proof we must know is <b>proof by exhaustion</b>. This is when we work out every possible option to be true so therefore the statement must be true. For example we could prove by exhaustion all of the prime numbers (only exactly divisble by 1 and itself) between 1 and 100. Proof by exhaustion is also helpful in proving more complex problems by splitting them up into smaller proofs. Such as proving the statement true for all even numbers then for all odd numbers and therefore all numbers. Finally, whilst all the proofs above have been with numbers, we can also apply the same methods of proof to geometry (shapes and graphs) yet through working with a different set of established rules. 
+      </p>
+      <h2 class="mt-5" id="3">Simple Questions</h2>
+      <p>
+        Here are some simple proof problems with solutions. Whilst reading through this textbook, each rule taught has a proof, and we recommend you to try and prove each rule to help practice this skill.
+      </p>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+/*
+0 - Imports (Fonts)
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat'); 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*
+1 - Colour Scheme
+https://www.color-hex.com/color-palette/59574
+https://www.color-hex.com/color-palette/47173
+*/
+
+.bg-light-green{
+	background-color:#7bd457;
+}
+.light-green{
+	color:#7bd457;
+}
+.bg-med-green{
+	background-color:#43a047;
+}
+.bg-light-yellow{
+	background-color: #dce54d;
+}
+.light-yellow{
+	color:#dce54d;
+}
+.bg-cream{
+	background-color:#e7d089;
+}
+.cream{
+	color:#e7d089;
+}
+.bg-light-brown{
+	background-color:#c98252;
+}
+.light-brown{
+	color:#c98252;
+}
+.bg-light-red{
+	background-color:#e16161;
+}
+.light-red{
+	color:#e16161;
+}
+.bg-pastel-blue{
+	background-color:#d4fff1;
+}
+/*
+2 - Structure
+*/
+.mnav{
+  background-color:#87F2BF;
+  box-shadow:
+    0 1px 1px rgba(0,0,0,0.15),
+    0 10px 0 -5px #87F2E2,
+    0 10px 1px -4px rgba(0,0,0,0.15),
+    0 20px 0 -10px #87e7f2,
+    0 20px 1px -9px rgba(0,0,0,0.15);
+}
+.bot-container{
+	padding-top:100px;
+}
+.container .row .col{
+	font-family: 'Roboto', sans-serif;
+}
+.container .row .col:nth-child(1){
+	font-size: 1.5em;
+}
+.container .row:nth-child(3){
+	color:#4285f4;
+}
+.container .row:nth-child(5){
+	color:#34a853;
+}
+.container .row:nth-child(7){
+	color:#fb4242;
+}
+.container .row:nth-child(9){
+	color:#bc7a42;
+}
+.container .row:nth-child(11){
+	color:#673ab7;
+}
+hr{
+	background-color:white;
+}
+li{
+	list-style-type: none;
+}
+a{
+	color:inherit;
+	text-decoration: none;
+}
+a:hover{
+	color:inherit;
+}
