@@ -60,13 +60,14 @@
     </header>
 
     <div class="sidebar">
+      <br />
+      <br />
       <li>
         <div class="card-header">Table of contents:</div>
         <ul><a href="#">1. Power Laws</a></ul>
-        <ul><a href="#2">2. Methods of Proof</a></ul>
-        <ul><a href="#3">3. Questions</a></ul>
+        <ul><a href="#2">2. Surds</a></ul>
+        <ul><a href="#3">3. Quadratics</a></ul>
         <hr />
-        <div class="card-header">Related content:</div>
       </li>
     </div>
 
@@ -89,6 +90,8 @@
           <li>\(a^n \div a^m = a^{n - m}\)</li>
           <li>\( (a^n)^m = a^{n \times m}\)</li>
         </ol>
+      </p>
+      <p class="lead">
         Given we have defined the power rules for positive integer powers, how may we extend these to other number sets? What would \( a^0 \) be? Well intuitively you may think that it must be 0 as it would mean "a times a, 0 times". However, in mathematics, it is very important for rules to be consistent so we must define \( a^0 \) as 1 so that:
 
         $$
@@ -105,7 +108,7 @@
         a^{-m} = \dfrac{1}{a^m}
         $$
 
-        Now we are ready to extend these rules to include all rational numbers (ie fractions). But first we must remind ourselves of what roots mean. A square root of a number, a, is the number which when multiplied by itself once gives the number a exactly; the nth root of a number, a, would be a number which when multiplied by itself n times gives the number a exactly. Some square roots are integers but a lot are irrational and are left in their root or surd form \( \sqrt{a} \). Using power rule 1. :
+        Now we are ready to extend these rules to include all rational numbers (ie fractions). But first we must remind ourselves of what roots mean. A square root of a number, a, is the number which when multiplied by itself once gives the number a exactly; the nth root of a number, a, would be a number which when multiplied by itself n times gives the number a exactly. Some square roots are integers but a lot are irrational and are left in their root or surd form \( \sqrt{a} \). Using power rule 1. : <div id="2"></div>
         $$
         a^n \times a^{\tfrac{1}{n}} = a^{\tfrac{1}{n}} \times a^{\tfrac{1}{n}} ... \times a^{\tfrac{1}{n}} = a^{\tfrac{n}{n}} = a
         $$
@@ -115,53 +118,81 @@
         $$
 
       </p>
-      <h2 class="mt-5" id="2">How do Mathematicians find rules?</h2>
+      <h2 class="mt-5">Surd rules and rationalising the denominator</h2>
       <p class="lead">
-        The job of a pure mathematician lies in discovery; discovering new rules of patterns that lie in wait for the most intelligent of beings to seize them as a result of the basic assumptions/definitions, more formally known as axioms, that define the game of mathematics. Let our journey begin by addressing some basic definitions:
+        With the power laws we introduced roots, Surds are simply irrational roots. Here are some rules for simplifying surds (and roots):
       </p>
-      <ul>
-        <li>There exists a set (collection of individual objects) of positive integer numbers known as Rational Numbers: \( \N = \{ 1,2,3,4,... \} \) </li>
-        <li>There exists a set of integer numbers including all natural numbers, \( \N \), 0 and negative integers:  \( \Z = \{ ...,-1,0,1,...  \} \)</li>
-        <li> Letters can be used as variables; to represent different types of numbers or a specific number (Basic algebra)</li>
-        <li>There is a set of numbers known as Rational numbers which can be expressed exactly as a ratio (fraction) of two integers: $$  \text{Q} = \{\frac{p}{q} \text{where p and q are integers and } q \neq 0 \} $$</li>
-        <li>There exist the following basic operations (and their inverse operations): Addition, Subtraction, Multiplication, Division</li>
-        <li>An even number is defined as a multiple of 2 \( 2n \) and An odd number is defined as not an even number: \( 2n - 1, 2n + 1\)</li>
-      </ul>
-      <h2 class="mt-5">Methods of Proof</h2>
-      <p class="lead">
-        Now we can go about proving, or disproving, new rules given the above assumptions. The methods we will learn and need to apply to basic problems are firstly <b>proof by deduction</b>. This is when we use pre established rules to find the new rule we want to find. As an example, we can prove that an even number added to a different even number is even. let \(2n\) represent an even number and \(2m \) represent another even number:
-
-        $$
-        2n + 2m = 2(n + m)
-        $$
-        Since we can factor out 2 this shows that number \( n + m \) is even. Another method of proof, or more accurately disproof, is by <b>counter-example</b>: Find one example that contradicts the new rule. For example we can disprove that for 2 integers, \( a,b \), if \(a^2 = b^2 \) then \(a = b\):
-
-        If \(a = 3, b = 3 \) then the statement holds. However if \(a = 3, b = -3 \):
-        $$
-        3^2 = (-3)^2, 3 \neq -3
-        $$
-        Then the statement does not hold, therefore we have proved the statement to be false. QED. Another method of disproof is by assuming the statement to be true and then finding a contradiction in previously accepted rules of mathematics as a result of the assumption, which proves that the assumption made must be false. A famous <b> proof by contradiction </b> is the proof that \( \sqrt{2} \) is irrational:
-
         <ol>
-          <li>Assume that  \( \sqrt{2} \) is a rational number and therefore can be expressed as \( \frac{a}{b}, b \neq 0 \) where \( a, b\) are integers in their simplest terms (they do not both have a common divisor). </li>
-          <li>
-            \((\sqrt{2})^2 =(\dfrac{a}{b})^2\ \\ 2 = \dfrac{a^2}{b^2} \\ 2a^2 = b^2\)
-          </li>
-          <li>
-            We have found that \( b \) must be even as \( b^2 \) is even and the square of an even number is an even number. 
-          </li>
-          <li>
-            We can apply the same argument to \( a \) which must also be even as a result. We can rewrite b and a as \(2m, 2n \) (multiples of 2).
-          </li>
-          <li>
-            Therefore \( \sqrt{2} = \dfrac{2m}{2n}\) which contradicts the fact that \(a, b\) are in their simplest terms. Therefore by contradiction, the \( \sqrt{2} \) must be irrational. QED.
-          </li>
+          <li>\((\sqrt[n]{a})^n = a\)</li>
+          <li>\(\sqrt{ab} = \sqrt{a} \sqrt{b}\)</li>
+          <li>\( \sqrt{\dfrac{a}{b}} = \dfrac{\sqrt{a}}{\sqrt{b}} \)</li>
+          <li>\(c \sqrt{a} + d \sqrt{a} = (c + d)\sqrt{a} \)</li>
         </ol>
+      <p class="lead">
+        Sometimes when dealing with a problem, we want to frame it in a certain way or rewrite it into a certain form; this is not necessarily simplifying the problem; as is the case for rationalising the denominator. This means making the denominator contain only rational numbers and moving irrational numbers (surds) to the numerator. We can easily do this for a simple fraction such as \( \dfrac{1}{\sqrt{a}} \) by multiply top and bottom by \(\sqrt{a} \). However what about rationalizing \(\dfrac{1}{\sqrt{a} - b}\)? In order to do this recall algebraic identities involved in expanding double brackets:
+      </p>
+        <ul>
+          <li> \( (A+B)^2 = A^2 + 2AB + B^2 \) </li>
+          <li> \( (A-B)^2 = A^2 - 2AB + B^2 \) </li>
+          <li> \( (A+B)(A-B) = A^2 - B^2 \) </li>
+        </ul>
+      <p class="lead" id="3">
+        The last identity is the difference of two squares and allows us to rationalize the denominator for more problems such as with the above example:
+        $$
+        \dfrac{1}{\sqrt{a} - b} = \dfrac{1(\sqrt{a} + b)}{(\sqrt{a} - b)(\sqrt{a} + b)} = \dfrac{\sqrt{a} + b}{a - b^2}
+        $$
+      </p>
+      <h2 class="mt-5">Quadratic functions</h2>
+      <p class="lead">
+        From GCSE we should know that a quadratic is a polynomial with the general form:
+        $$
+        ax^2 + bx + c = 0
+        $$
+        We should also be aware of functions which take a set of inputs (domain) and map them to a set of corresponding outputs (range). \( f(x) = x^2 + 2\) is an example of a quadratic function where \( f(x) \) means 'f of x' and represents the outputted value. Another way of thinking of this is \(f(x)\) is the dependent variable which depends on the value of \(x\). Often, \( f(x) = y\). As a rule of thumb, the dependent variable is plotted on the y-axis (vertical line), and the x-axis is the independent variable (horizontal).
       </p>
       <p class="lead">
-        The final method of proof we must know is <b>proof by exhaustion</b>. This is when we work out every possible option to be true so therefore the statement must be true. For example we could prove by exhaustion all of the prime numbers (only exactly divisble by 1 and itself) between 1 and 100. Proof by exhaustion is also helpful in proving more complex problems by splitting them up into smaller proofs. Such as proving the statement true for all even numbers then for all odd numbers and therefore all numbers. Finally, whilst all the proofs above have been with numbers, we can also apply the same methods of proof to geometry (shapes and graphs) yet through working with a different set of established rules. 
+        What do quadratic graphs look like? Well they all have a general curved shape known as a parabola. The best way to learn about graphs, is to play around with them so we recommend you visit <a href="https://desmos.com" target="_blank">desmos</a> and investigate them yourself before continuing. Here is the graph of \( y = 2x^2 + 4x + 1 \): <br/>
+
       </p>
-      <h2 class="mt-5" id="3">Simple Questions</h2>
+      <div class="text-center"><img src="img/algebra-quadraticgraph.png" class="rounded"></div>
+      <p class="lead">
+        From careful observation we see that the parabola crosses the x-axis twice and the y-axis once. Also the curve seems to be symmetric about its' minimum point. If we were able to find these points then we could sketch any quadratic graph:
+      </p>
+      <ol>
+        <li>points on the x-axis (the horizontal line with equation \(y = 0\)) can be found by solving \( f(x) = 0 \) for values of \(x\). These values are often known as the solutions to the equation or the roots of the function.</li>
+        <li>The y-intercept (y-axis has equation \( x = 0\)) can be solved by finding the value of \(f(x)\) from the quadratic equation when \(x = 0\).</li>
+        <li>The minimum point is a stationary point and has a gradient of 0. Stationary points for parabolas have the greatest or least y value so we could find it this way alternatively. A final method would be finding the x-coordinate half-way between the 2 roots of the function and then plugging this value into the equation to find the corresponding y value.</li>
+      </ol>
+      <p class="lead">
+        If the above picture of a parabola has a minimum stationary point, what would the shape of a parabola with a maximum point look like? Why would it have a maximum point? Well the shape of the parabola is determined by the whether the leading coefficient (the number term, a in front of \(x^2\)) is positive or negative; positive is a happy-faced parabola, negative a sad one. From the general form of a quadratic we can derive a formula to find us the coordinates for the stationary point of a parabola: (Try and have a go deriving it!)
+
+        $$
+        ax^2 + bx + c = a(x + \dfrac{b}{2a})^2 + (c - \dfrac{b^2}{4a})
+        $$
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#proof1">
+        Reveal Proof
+      </button> <br />
+        It is important here to consider that the coordinates of the turning point for equation \( a(x + p)^2 + q\) (substituting p and q in place of the whole completing the square formula) are \( (-p, q) \). Why this is the case will soon be evident once we consider graph transformations of functions.
+      </p>
+      <p class="lead">
+        Now we have found a way to find the stationary point of a parabola, and finding the y-intercept is straight-forward, how do we go about finding the roots of a quadratic equation or more precisely, solving \( ax^2 + bx + c = 0\) for x. Well, we can factorise (using methods assumed to be taught to you at GCSE) and solve. But sometimes quadratics don't factorise nicely. We can derive a formula to solve quadratics (incidently known as the quadratic formula) by rearranging the general quadratic equation in terms of x to arrive at:
+
+        $$
+        x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+        $$
+      </p>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#proof2">
+        Reveal Proof
+      </button>
+      <p class="lead">
+        How many solutions does a quadratic equation have? Well from the quadratic formula if we treat \( \sqrt{b^2 - 4ac} \) as "something" or z we end up with either 2 none or 1 depending on the value of \( b^2 - 4ac \); this is known as the discriminant and the following rules tell us how many real solutions a quadratic equation has (or how many times the curve passes the x-axis):
+        <ul>
+          <li>When \( b^2 - 4ac > 0\) it has 2 real solutions</li>
+          <li>When \( b^2 - 4ac = 0\) it has 1 repeated real solution</li>
+          <li>When \( b^2 - 4ac < 0\) it has no real solutions</li>
+        </ul>
+      </p>
+      <h2 class="mt-5">Simple Questions</h2>
       <p>
         Here are some simple proof problems with solutions. Whilst reading through this textbook, each rule taught has a proof, and we recommend you to try and prove each rule to help practice this skill. The questions presented are remedial since assuming you have just started the A level course and have not been taught any of the mathematical techniques to prove harder problems.
       </p>
@@ -178,7 +209,90 @@
       	<li>Prove the sum of 2 consecutive prime numbers is always even.</li>
       	<li>Given that a is a positive real number, prove that: \( a + \dfrac{1}{a} \geq 2\)</li>
       </ol>
-      <!-- Modal -->
+      <!-- Modals -->
+      <div class="modal fade" id="proof1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Derivation of Completing the square formula</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <ol>
+                <li>First let us find a perfect square \( (x + z)^2 \) which gives us : \(x^2 + bx \). This can be done by manipulating the perfect square identity:</li>
+                $$
+                (A + B)^2 = A^2 + 2AB + B^2 \\
+                (x + b)^2 = x^2 + 2bx + b^2 \\
+                (x + \dfrac{1}{2}b)^2 = x^2 + bx + \dfrac{1}{4}b^2 = x^2 + bx + (\dfrac{b}{2})^2.
+                $$
+                <li>
+                  This now means that we have found a completed square formula for the above term:
+                </li>
+                $$
+                x^2 + bx = (x + \dfrac{b}{2})^2 - (\dfrac{b}{2})^2
+                $$
+                <li>
+                  Now let us rewrite this equation into the same form using the identity above: \[ x^2 + bx + c = (x + \dfrac{b}{2})^2 - (\dfrac{b}{2})^2 + c\].
+                </li>
+                <li>
+                  Finally, lets rearrange the quadratic equation into a form where we can use the above identity we found.
+                </li>
+                $$
+                ax^2 + bx + c \\
+                a (\dfrac{ax^2 + bx}{a}) + c = a(x^2 + \dfrac{b}{a}x) + c \\
+                $$
+                <li>
+                  Now we can apply the identity from above to arrive at the completing the square formula:
+                </li>
+                $$
+                a (x + \dfrac{1}{2} \times \dfrac{b}{a})^2 - (\dfrac{1}{2} \times \dfrac{b}{a})^2 + c \\
+                ax^2 + bx + c = a(x + \dfrac{b}{2a})^2 + (c - \dfrac{b^2}{4a})
+                $$
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="proof2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Derivation of Quadratic Formula</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <ol>
+                <li>
+                  Start by completing the square (see the above proof for deriving the completed square formula):
+                </li>
+                $$
+                ax^2 + bx + c = a(x + \dfrac{b}{2a})^2 + c - \dfrac{b^2}{4a}
+                $$
+                <li>
+                  Now all we have to do is use rules of algebra to rearrange the expression to be in terms of x:
+                </li>
+                $$
+                \dfrac{b^2}{4a} - c = a(x + \dfrac{b}{2a})^2 \\
+                \dfrac{b^2 - 4ac}{4a} \times \dfrac{1}{a} = \dfrac{a(x + \dfrac{b}{2a})^2}{a} \\[1em]
+                \sqrt{\dfrac{b^2 - 4ac}{4a^2}} = \sqrt{(x + \dfrac{b}{2a})^2} \\[1em]
+                x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+                $$
+              </ol>
+              Why is there \( \pm \) before the square root? Well every square root can be either the positive square root or negative square root. For example: \( \sqrt{9} = \pm 3\).
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="modal fade" id="answers1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">

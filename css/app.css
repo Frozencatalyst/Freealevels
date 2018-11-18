@@ -3,6 +3,7 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat'); 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Vesper+Libre');
 
 /*
 1 - Colour Scheme
@@ -49,6 +50,9 @@ https://www.color-hex.com/color-palette/47173
 /*
 2 - Structure
 */
+.quote{
+	font-family: 'Vesper Libre', sans-serif;
+}
 .mnav{
   background-color:#87F2BF;
   box-shadow:
