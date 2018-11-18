@@ -19,12 +19,12 @@
     onload="renderMathInElement(document.body);"></script>
 
 
-    <title>A level Maths | Proof</title>
+    <title>A level Maths | Algebra and Functions</title>
   </head>
   <body>
+    <br />
     <header>
       <!-- Fixed navbar -->
-      <br />
       <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <a class="navbar-brand" href="../index.html">A level Maths</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,19 +33,19 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">
+              <a class="nav-link" href="proof.html">
                 <i class="material-icons">
                 arrow_back
                 </i>
-                Home
+                1. Proof
               </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">1. Proof <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">2. Algebra and functions <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="algebra.html">
-                1. Algebra and functions
+              <a class="nav-link" href="#">
+                3. Coordinate geometry
                 <i class="material-icons">
                 arrow_forward
                 </i>
@@ -60,14 +60,13 @@
     </header>
 
     <div class="sidebar">
-      <br />
-      <br />
       <li>
         <div class="card-header">Table of contents:</div>
-        <ul><a href="#">1. Introduction</a></ul>
+        <ul><a href="#">1. Power Laws</a></ul>
         <ul><a href="#2">2. Methods of Proof</a></ul>
         <ul><a href="#3">3. Questions</a></ul>
         <hr />
+        <div class="card-header">Related content:</div>
       </li>
     </div>
 
@@ -75,12 +74,46 @@
     <!-- Begin page content -->
     <main role="main" class="container">
       <div id="#1"></div>
-      <h2 class="mt-5"">Introduction to Mathematics</h2>
-      <p class="lead">Mathematics is in many ways the most rewarding A level to study; it opens a wide-range of career opportunities from investment banking to research in the sciences. However, many people find mathematics hard as it requires you to link many separate rules together and apply them to answer a question, as a result Mathematics requires practice and hard-work. The textbook starts with the assumption that you have passed a GCSE Maths course, although some principles will be briefly reviewed.
-      <br />
-      <h2 class="mt-5">What is Mathematics?</h2>
+      <h2 class="mt-5"">Power laws</h2>
       <p class="lead">
-        Mathematics is simply a set of rules which make up a game. The most basic rules are taught from primary school and gradually built upon so that you can solve more problems and interact with mathematics in a more creative, abstract way. Like any game some are naturally better at certain aspects than others. Regardless of this Mathematics is useful for any individual as once you have learnt enough rules you can <b>apply</b> them to the real world to solve real-life situations. However, another side of Mathematics lies in expanding upon the rules of the game by using multiple established rules in creative, explorative ways to find and establish new rules which enrich the toolkit Mathematicians already have - Welcome to <b>Pure</b> Mathematics.
+        The purpose of the Algebra module is to teach you new methods to manipulate and solve problems involving letters. Later, we use these methods to explore the relationship between an input and output variable on a graph, as a function.
+      <br />
+      <p class="lead">
+        Let us first consider what a "power", exponent or index (whatever term you may prefer) actually means: 
+        $$
+        a^n = a_1 \times a_2 ... \times a_n   
+        $$
+        As we see above "a to the power n" means "a times a, n times." There are various rules that allow us to simplify these terms if the base, a, is the same:
+        <ol>
+          <li>\(a^n \times a^m = a^{n + m}\)</li>
+          <li>\(a^n \div a^m = a^{n - m}\)</li>
+          <li>\( (a^n)^m = a^{n \times m}\)</li>
+        </ol>
+        Given we have defined the power rules for positive integer powers, how may we extend these to other number sets? What would \( a^0 \) be? Well intuitively you may think that it must be 0 as it would mean "a times a, 0 times". However, in mathematics, it is very important for rules to be consistent so we must define \( a^0 \) as 1 so that:
+
+        $$
+        \dfrac{a^1}{a^1} = a^{1 - 1} = a^0 = 1
+        $$
+
+        Now, how would we extend our understanding of power rules to negative numbers? Let us examine an example; if \( a \neq 0 \) and \( m < n\):
+        $$
+        \dfrac{a^{n-m}}{a^n} = a^{(n-m)-n} = \dfrac{a_1 \times a_2 \times ... a_{n-m} }{a_1 \times a_2 \times ... a_m } = \dfrac{1}{a^m}
+        $$
+        We can cancel each term on the top and bottom by a the maximum number of times possible and since there are fewer a terms on the top we would be left with 1 and the remaining \( a^m \) on the bottom. Therefore for negative powers we have the rule:
+
+        $$
+        a^{-m} = \dfrac{1}{a^m}
+        $$
+
+        Now we are ready to extend these rules to include all rational numbers (ie fractions). But first we must remind ourselves of what roots mean. A square root of a number, a, is the number which when multiplied by itself once gives the number a exactly; the nth root of a number, a, would be a number which when multiplied by itself n times gives the number a exactly. Some square roots are integers but a lot are irrational and are left in their root or surd form \( \sqrt{a} \). Using power rule 1. :
+        $$
+        a^n \times a^{\tfrac{1}{n}} = a^{\tfrac{1}{n}} \times a^{\tfrac{1}{n}} ... \times a^{\tfrac{1}{n}} = a^{\tfrac{n}{n}} = a
+        $$
+        If we substitute \(a^{\tfrac{1}{n}} = b\) we arrive at \( b^n = a \) so then we must define \(a^{\tfrac{1}{n}} = \sqrt[n]{a} \). Finally, we end this section by generalising this for cases where the numerator is not 1 but instead \(m\):
+        $$
+        a^{\tfrac{m}{n}} = (a^{\tfrac{1}{n}})^m = \sqrt[n]{a^m}
+        $$
+
       </p>
       <h2 class="mt-5" id="2">How do Mathematicians find rules?</h2>
       <p class="lead">
